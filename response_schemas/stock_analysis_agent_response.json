@@ -1,0 +1,67 @@
+{
+  "agent_name": "Stock Analysis Agent",
+  "agent_id": "698be3e9544d8929157d02a4",
+  "agent_purpose": "stock_analysis",
+  "description": "Stock portfolio analysis agent that fetches real-time market data and sends email briefings",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "summary": "string",
+      "data": {
+        "stocks_analyzed": [
+          "string"
+        ],
+        "email_sent": "boolean",
+        "recipient": "string",
+        "analysis_highlights": "string"
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "summary": "The morning briefing report has been generated and sent successfully.",
+      "data": {
+        "stocks_analyzed": [
+          "AAPL",
+          "GOOGL",
+          "MSFT"
+        ],
+        "email_sent": true,
+        "recipient": "user@example.com",
+        "analysis_highlights": "Apple Inc. (AAPL) shows a 2.5% increase, Google (GOOGL) remains stable with minor fluctuations, while Microsoft (MSFT) decreased by 1.2%."
+      }
+    },
+    "metadata": {
+      "agent_name": "Stock Analysis Agent",
+      "timestamp": "2023-10-07T08:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-11T02:07:28.164100",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "summary": "The morning briefing report has been generated and sent successfully.",
+      "data": {
+        "stocks_analyzed": [
+          "AAPL",
+          "GOOGL",
+          "MSFT"
+        ],
+        "email_sent": true,
+        "recipient": "user@example.com",
+        "analysis_highlights": "Apple Inc. (AAPL) shows a 2.5% increase, Google (GOOGL) remains stable with minor fluctuations, while Microsoft (MSFT) decreased by 1.2%."
+      }
+    },
+    "metadata": {
+      "agent_name": "Stock Analysis Agent",
+      "timestamp": "2023-10-07T08:00:00Z"
+    }
+  }
+}

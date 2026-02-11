@@ -1,0 +1,26 @@
+{
+  "agent_name": "Stock Analysis Agent",
+  "agent_id": "698be3e9544d8929157d02a4",
+  "test_message": "Provide a brief test response to confirm the agent is working",
+  "expected_purpose": "stock_analysis",
+  "timestamp": "2026-02-11T02:07:20.554289",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "summary": "Agent is functioning properly and ready to assist with stock analysis.",
+      "data": {
+        "stocks_analyzed": [],
+        "email_sent": false,
+        "recipient": "",
+        "analysis_highlights": "System is operational."
+      }
+    },
+    "metadata": {
+      "agent_name": "Stock Analysis Agent",
+      "timestamp": "2023-10-03T10:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"summary\": \"Agent is functioning properly and ready to assist with stock analysis.\",\n    \"data\": {\n      \"stocks_analyzed\": [],\n      \"email_sent\": false,\n      \"recipient\": \"\",\n      \"analysis_highlights\": \"System is operational.\"\n    }\n  },\n  \"metadata\": {\"agent_name\": \"Stock Analysis Agent\", \"timestamp\": \"2023-10-03T10:00:00Z\"}\n}"
+}

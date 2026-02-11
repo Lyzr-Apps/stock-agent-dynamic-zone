@@ -1,0 +1,12 @@
+{
+  "agent_name": "Stock Analysis Agent",
+  "agent_id": "698be3e9544d8929157d02a4",
+  "test_input": "Analyze my portfolio: AAPL,GOOGL,MSFT and send the morning briefing to investor@example.com",
+  "response": {
+    "error": "litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=sonar-reasoning-pro"
+  },
+  "field_types": {},
+  "status": "failed",
+  "failure_reason": "LiteLLM provider configuration error - model requires provider prefix (perplexity/sonar-reasoning-pro)",
+  "timestamp": "2026-02-11T00:00:00Z"
+}

@@ -1,0 +1,39 @@
+{
+  "agents": [
+    {
+      "agent_id": "698be3e9544d8929157d02a4",
+      "name": "Stock Analysis Agent",
+      "type": "stock_analysis",
+      "description": "Fetches real-time stock data, analyzes portfolio performance including price changes, volume, technical indicators, and market sentiment, then composes and sends a detailed morning briefing email",
+      "provider": "perplexity",
+      "model": "perplexity/sonar-reasoning-pro",
+      "temperature": 0.3,
+      "top_p": 1,
+      "tools": ["gmail"],
+      "created_at": "2026-02-11T02:05:41.000Z",
+      "updated_at": "2026-02-11T02:10:00.000Z"
+    }
+  ],
+  "schedules": [
+    {
+      "schedule_id": "698be3f5ebe6fd87d1dcc0f0",
+      "agent_id": "698be3e9544d8929157d02a4",
+      "agent_name": "Stock Analysis Agent",
+      "cron_expression": "0 7 * * *",
+      "timezone": "America/New_York",
+      "message": "Analyze portfolio: AAPL,GOOGL,MSFT and send email to user@example.com",
+      "is_active": true,
+      "next_run_time": "2026-02-11T07:00:00-05:00",
+      "description": "Daily at 7:00 AM EST",
+      "created_at": "2026-02-11T02:05:41.924683Z"
+    }
+  ],
+  "knowledge_bases": [],
+  "workflow_metadata": {
+    "total_agents": 1,
+    "total_schedules": 1,
+    "has_knowledge_base": false,
+    "created_at": "2026-02-11T02:05:41.000Z",
+    "updated_at": "2026-02-11T02:10:00.000Z"
+  }
+}

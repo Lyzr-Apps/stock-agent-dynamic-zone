@@ -116,10 +116,13 @@ function formatTimestamp(timestamp: string): string {
   })
 }
 
-function getNextRunTimes(cron: string, timezone: string, count: number = 5): string[] {
+function getNextRunTimes(cron: string | undefined, timezone: string, count: number = 5): string[] {
   // Simplified calculation - in production, use a cron parser library
   const times: string[] = []
   const now = new Date()
+
+  // Safety check for undefined cron
+  if (!cron) return ['Schedule not loaded']
 
   // Parse cron: minute hour day month dayOfWeek
   const parts = cron.split(' ')
